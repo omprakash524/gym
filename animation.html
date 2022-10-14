@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes</title>
+</head>
+<style>
+    .container{
+        /* display: flex; */
+        background-color: aquamarine;
+        /* background-image: url("books.jpg"); */
+    }
+    .box{
+        /* background-color: #ff9933; */
+        background-image: url("books.jpg");
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: om1;
+        animation-name: omprakash;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode:forwards;
+        animation-timing-function: ease-in-out;
+        /* animation-delay: 3s; */
+        /* animation-direction: alternate; */
+        animation-direction: reverse;
+    }
+    @keyframes omprakash {
+        0%{
+            top: 0px;
+            left: 0px;
+        }25%{
+            top: 250px;
+            left: 0px;
+        }75%{
+            top: 250px;
+            left: 250px;
+        }100%{
+            top: 0px;
+            left: 250px;
+        }
+        
+    }
+    @keyframes om1{
+        from{
+            width: 00px;
+        }to{
+            width: 600px;
+        }
+    }
+
+    /* .box1{
+        background-color: #FFFFFF;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: om12;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes om12{
+        from{
+            width: 401px;
+        }to{
+            width: 800px;
+        }
+    }
+     */
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="books.jpg" height="250px" width="250px" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

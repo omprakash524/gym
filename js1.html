@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditon</title>
+</head>
+<script>
+    function greet(name){
+        console.log(name+" is a good boy");
+    }
+    let name = "om";
+    let name1 = "priya";
+    let name2 = "mahesh";
+    let name3 = "rishi";
+    let name4 = "good";
+    greet(name);
+    greet(name1);
+    greet(name2);
+    greet(name3);
+    greet(name4);
+
+    let input = prompt("Enter your name : ","Guest");
+    console.log(input);
+
+    let cnfm = confirm("Do you want delete");
+    console.log(cnfm);
+    if(cnfm){
+        console.log("your post has been deleted successfully");
+    }else{
+        console.log("Your post has not been deleted");
+    }
+    let fr = ["om","rishi","omprakash"];
+    for (let index = 0; index < fr.length; index++) {
+        console.log("Hello friend "+fr[index]);
+    }
+    // for(let count = 0; count<fr.length; count++){
+    //     console.log("ok i am "+fr[count]);
+    // }
+    
+    let employee = {
+        name: "om",
+        salary:2,
+        channel:"om"
+    }
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+</script>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

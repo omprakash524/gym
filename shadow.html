@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: azure;
+        /* box-shadow: 10px 13px; */
+        box-shadow: -10px -13px 5px;
+        /* box-shadow: inset 10px 2px green; */
+        border: 2px solid rgb(91, 73, 73);
+    }
+    .card h2{
+        text-shadow: 3px 2px rgb(194, 211, 194);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae, dolorum necessitatibus eveniet rem minima sapiente adipisci quam nobis porro quod amet neque, qui repudiandae reprehenderit placeat, autem possimus saepe.
+            Numquam, quam nisi. Modi pariatur eaque accusantium nemo voluptate adipisci voluptatem sit eius, libero cum error. Quam molestiae voluptatem suscipit, numquam eligendi nostrum aut reiciendis, fugit porro asperiores ad neque.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae, dolorum necessitatibus eveniet rem minima sapiente adipisci quam nobis porro quod amet neque, qui repudiandae reprehenderit placeat, autem possimus saepe.
+                Numquam, quam nisi. Modi pariatur eaque accusantium nemo voluptate adipisci voluptatem sit eius, libero cum error. Quam molestiae voluptatem suscipit, numquam eligendi nostrum aut reiciendis, fugit porro asperiores ad neque.</p>    
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae, dolorum necessitatibus eveniet rem minima sapiente adipisci quam nobis porro quod amet neque, qui repudiandae reprehenderit placeat, autem possimus saepe.
+                Numquam, quam nisi. Modi pariatur eaque accusantium nemo voluptate adipisci voluptatem sit eius, libero cum error. Quam molestiae voluptatem suscipit, numquam eligendi nostrum aut reiciendis, fugit porro asperiores ad neque.</p>    
+        </div>
+    </div>
+    
+</body>
+</html>

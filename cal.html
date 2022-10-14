@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<style>
+    h1{
+        /* background-color: bisque; */
+        padding: 0.25%;
+        height: 40%;
+        width: 50%;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: azure;
+        text-align: center;
+
+    }
+
+    h2{
+        color: white;
+        text-align: center;
+    }
+
+    #inp{
+        background-color: aqua;
+        display: block;
+        float: left;
+        width: 250px;
+        margin-left: 50px;
+        padding: 15px;
+    }
+
+    #calculate{
+        text-align: center;
+        margin-left: 30%;
+    }
+    op{
+        background-color: black;
+        display: block;
+        float: right;
+        width: 450px;
+        margin-left: 310px;
+        padding: 25px;
+
+    }
+</style>
+<body>
+    <h1>Calculator</h1>
+
+    <div>
+        <span id="inp">
+            <h2>Input</h2>
+            <br>
+            Operand 1: <input type="number" name="num1" id="Num1" placeholder="Enter first number" required value="0"> <br> <br>
+             Operator: &nbsp;&nbsp;&nbsp;<input type="text" name="oper" id="Operator" placeholder="Use anyone out of these: +,-,*,/" required value="*"> <br> <br>
+             Operand 2: <input type="number" name="num2" id="Num2" placeholder="Enter second number" value="0" required> <br> <br>
+             <input type="button" value="Calculate" id="calculate">
+        </span>
+
+        <span id="op">
+            <h2>Output</h2>
+
+        </span>
+    </div>
+</body>
+</html>
